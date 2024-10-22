@@ -19,16 +19,7 @@ describe('<Quiz>', ()=> {
         cy.get('button').should('have.text', 'Start Quiz')
     })
 
-    it('should begin the quiz when the Start Quiz button is clicked', ()=> {
-        cy.mount(<Quiz/>)
-        cy.get('button').click()
-        cy.wait('@questionsArray')
-        cy.get('h2').should('exist')
-        cy.get('button').first().should('have.text', '1')
-        cy.get('button').eq(3).should('have.text', '4')
-    })
-
-    it('should display the correct question and answer options', () => {
+    it('should display the first question and answer set when the Start Quiz button is clicked', ()=> {
         cy.mount(<Quiz/>)
         cy.get('button').click()
         cy.wait('@questionsArray')
@@ -36,7 +27,7 @@ describe('<Quiz>', ()=> {
         cy.get('.card').children().eq(1).children().eq(2).children().eq(1).should('have.text', 'Wrong answer 1b')
     })
 
-    it('should advance to the next question when the previous is answered', ()=> {
+    it('should advance to displaying the next question when the previous is answered', ()=> {
         cy.mount(<Quiz/>)
         cy.get('button').click()
         cy.wait('@questionsArray')
