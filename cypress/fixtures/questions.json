@@ -1,0 +1,29 @@
+[
+    {
+        "question": "Test question 1",
+        "answers": [
+          { "text": "Wrong answer 1a", "isCorrect": false },
+          { "text": "Right answer 1", "isCorrect": true },
+          { "text": "Wrong answer 1b", "isCorrect": false },
+          { "text": "Wrong answer 1c", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Test question 2",
+        "answers": [
+          { "text": "Wrong answer 2a", "isCorrect": false },
+          { "text": "Wrong answer 2b", "isCorrect": false },
+          { "text": "Wrong answer 2c", "isCorrect": false },
+          { "text": "Right answer 2", "isCorrect": true }
+        ]
+      },
+      {
+        "question": "Test question 3",
+        "answers": [
+          { "text": "Wrong answer 3a", "isCorrect": false },
+          { "text": "Wrong answer 3b", "isCorrect": false },
+          { "text": "Right answer 3", "isCorrect": true },
+          { "text": "Wrong answer 3c", "isCorrect": false }
+        ]
+      }
+]
